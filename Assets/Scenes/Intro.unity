@@ -577,7 +577,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 606230691}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1835935229793185274}
+        m_MethodName: toggleCars
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Left
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &606230691
@@ -695,7 +706,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1058196774}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1835935229793185274}
+        m_MethodName: toggleCars
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Right
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1058196774
@@ -977,6 +999,10 @@ PrefabInstance:
     - target: {fileID: 4624115843349500, guid: c7ad4a39587cd4a388cba51e939939a5, type: 3}
       propertyPath: m_LocalPosition.z
       value: 1.729
+      objectReference: {fileID: 0}
+    - target: {fileID: 1129874218081530, guid: c7ad4a39587cd4a388cba51e939939a5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1787377745776038, guid: c7ad4a39587cd4a388cba51e939939a5, type: 3}
       propertyPath: m_IsActive
@@ -1507,7 +1533,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1610265466720824, guid: 02e641040fb499c49a848e40f535164a, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4013073016293618, guid: 02e641040fb499c49a848e40f535164a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1651,3 +1677,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1907654376}
   m_CullTransparentMesh: 0
+--- !u!1 &1835935229793185273 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1835935229793185273, guid: c7ad4a39587cd4a388cba51e939939a5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1691237301}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1835935229793185274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1835935229793185273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6eec201f41695a64484dca635ec7693d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
