@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class CarSelection : MonoBehaviour
 {
@@ -45,5 +43,9 @@ public class CarSelection : MonoBehaviour
 
         // Set the current car to be active from the list
         carList[currentCar].SetActive(true);
+        GameObject cloudSystem = (GameObject)Instantiate(Resources.Load("CloudParticle"));
+        ParticleSystem cloudPuff = cloudSystem.GetComponent<ParticleSystem>();
+        cloudPuff.Play();
+        cloudPuff.transform.position = new Vector3(0f, -3f, 0f);
     }
 }
