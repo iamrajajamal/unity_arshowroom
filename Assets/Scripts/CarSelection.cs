@@ -46,6 +46,7 @@ public class CarSelection : MonoBehaviour
         GameObject cloudSystem = (GameObject)Instantiate(Resources.Load("CloudParticle"));
         ParticleSystem cloudPuff = cloudSystem.GetComponent<ParticleSystem>();
         cloudPuff.Play();
-        cloudPuff.transform.position = new Vector3(0f, -3f, 0f);
+        cloudPuff.transform.position = new Vector3(0f, -2f, 2f);
+        Destroy(cloudSystem, 4f);
     }
 }
