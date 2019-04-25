@@ -22,5 +22,5 @@ public class GameController : MonoBehaviour
         Application.Quit();
 
     public void ChangeLevel(string sceneName) => 
-        SceneManager.LoadScene(sceneName);
+        SceneManager.LoadSceneAsync(sceneName);
 }
