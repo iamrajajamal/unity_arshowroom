@@ -36,6 +36,24 @@ public partial class Wit3D : MonoBehaviour
                     actionFound = true;
                 }
             }
+            if (theAction.entities.start != null)
+            {
+                foreach (Start aPart in theAction.entities.start)
+                {
+                    Debug.Log(aPart.value);
+                    myHandleTextBox.text = aPart.value;
+                    actionFound = true;
+                }
+            }
+            if (theAction.entities.stop != null)
+            {
+                foreach (Stop aPart in theAction.entities.stop)
+                {
+                    Debug.Log(aPart.value);
+                    myHandleTextBox.text = aPart.value;
+                    actionFound = true;
+                }
+            }
 
             if (!actionFound)
             {
@@ -70,10 +88,28 @@ public class Close
     public string type { get; set; }
 }
 
+public class Start
+{
+    public bool suggested { get; set; }
+    public double confidence { get; set; }
+    public string value { get; set; }
+    public string type { get; set; }
+}
+
+public class Stop
+{
+    public bool suggested { get; set; }
+    public double confidence { get; set; }
+    public string value { get; set; }
+    public string type { get; set; }
+}
+
 public class Entities
 {
     public List<Open> open { get; set; }
     public List<Close> close { get; set; }
+    public List<Start> start { get; set; }
+    public List<Stop> stop { get; set; }
 }
 
 public class RootObject
