@@ -43,6 +43,7 @@ public class CarSelection : MonoBehaviour
 
         // Set the current car to be active from the list
         carList[currentCar].SetActive(true);
+        GameController.CurrentSelectedCar = carList[currentCar].name;
         GameObject cloudSystem = (GameObject)Instantiate(Resources.Load("CloudParticle"));
         ParticleSystem cloudPuff = cloudSystem.GetComponent<ParticleSystem>();
         cloudPuff.Play();
