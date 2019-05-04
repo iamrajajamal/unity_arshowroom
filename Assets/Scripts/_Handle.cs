@@ -23,6 +23,7 @@ public partial class Wit3D : MonoBehaviour
                 foreach (Open aPart in theAction.entities.open)
                 {
                     Debug.Log(aPart.value);
+                    carController.instance.triggerAnimation("openDriversDoor");
                     myHandleTextBox.text = aPart.value;
                     actionFound = true;
                 }
